@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>jQuery 'I Think I Might' Demo</title>
+<style type="text/css" media="screen">
+	body, html {
+		min-height: 100%;
+		min-width: 100%;
+		background-color: #f2f0f0;
+	}
+	#content {
+		margin: auto;
+		width: 900px;
+	}
+	.box {
+		border: 40px solid #fff;
+		opacity: 0.8;
+	}
+	.box:hover {
+		opacity: 1;
+	}
+</style>
+</head>
+
+<body>
+<div id="content">
+	<div id="blue" class="box"></div>
+	<div id="purple" class="box"></div>
+	<div id="pink" class="box"></div>
+	<div id="yellow" class="box"></div>
+	<div id="orange" class="box"></div>
+	<div id="red" class="box"></div>
+	<div id="magenta" class="box"></div>
+	<div style="clear: both"></div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="jquery.ithinkimight.js"></script>
+<script>
+	$("#content").ithinkimight("box");
+
+	// To get some variation
+	$(".box").each(function() {
+		$(this).css('background-color', $(this).attr('id'));
+		$(this).height($(this).width());
+	});
+</script>
+</body>
+</html>
