@@ -3,6 +3,8 @@ jquery-ithinkimight
 
 jQuery plugin to arrange elements in a random list like on I Think I Might ([ithinkimight.com](http://ithinkimight.com)). Used in the tumblr theme with the same name! [I Think I Might Theme Tumblr](http://ithinkimighttheme.tumblr.com/)
 
+This plugin is a fast hack and should be updated to fit your needs!
+
 ## How to use it
 A simple setup could look like:
 
