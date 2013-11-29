@@ -25,7 +25,7 @@ A simple setup could look like:
 </script>
 ```
 ## Compatability:
-- Works in IE8
+- Works in >=IE8
 
 ## In Use:
 - [I Think I Might Theme Tumblr](http://ithinkimighttheme.tumblr.com/)
