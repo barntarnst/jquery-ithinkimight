@@ -18,9 +18,12 @@
         *
         **/
         (function($) {
-          $.fn.ithinkimight = function(class_name, content_class_name, max_width, min_width, way, rand, marginleft, self, zindex, obj) {
+          $.fn.ithinkimight = function(class_name, content_class_name, max_width, min_width, overlap, way, rand, marginleft, self, zindex, obj) {
             if(typeof class_name === 'undefined') { class_name = 'post'; }
             if(typeof content_class_name === 'undefined') { content_class_name = class_name; }
+            if(typeof max_width === 'undefined') { max_width = 410; }
+            if(typeof min_width === 'undefined') { min_width = 220; }
+            if(typeof overlap === 'undefined') { overlap = 0.9; }
             obj = this;
             obj.zindex = 1;
             obj.getzindex = function() 
@@ -41,10 +44,10 @@
                     $(this).css('left', '50%');
                     $(this).css('float', 'left');
                     $(this).css('clear', 'both');
+                    rand = Math.random()*(max_width-min_width) + min_width;
                     if(rand != 0) {
-                        $(this).css('margin-top', (-1 * Math.random() * (rand/1.05 - 90)) + 'px' );
+                        $(this).css('margin-top', (-1 * Math.random() * (rand*overlap)) + 'px' );
                     }
-                    rand = Math.random()*190 + 220;
                     marginleft = Math.random()*($(self).width()/2-rand/2-75) + 75;
                     way = -1*way;
                     marginleft = way * marginleft;
