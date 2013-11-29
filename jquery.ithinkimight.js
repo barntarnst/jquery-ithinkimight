@@ -6,9 +6,9 @@
         *
         *  Simply
         *       
-        *  $("#my_container").ithinkimight(".my_elements", ".my_elements_containter"); 
+        *  $("#my_container").ithinkimight(".my_elements", max_width, min_width); 
         *  
-        *  to arrange all elements with class my_elemts 
+        *  to arrange all elements with class my_elements 
         *
         *   
         *  Todo:
